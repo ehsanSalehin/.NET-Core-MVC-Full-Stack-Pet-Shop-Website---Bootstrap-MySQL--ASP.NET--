@@ -1,0 +1,39 @@
+F:\PROJECT\Project MVC\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.csproj.AssemblyReference.cache
+F:\PROJECT\Project MVC\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+F:\PROJECT\Project MVC\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.AssemblyInfoInputs.cache
+F:\PROJECT\Project MVC\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.AssemblyInfo.cs
+F:\PROJECT\Project MVC\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.csproj.CoreCompileInputs.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.csproj.AssemblyReference.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.AssemblyInfoInputs.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.AssemblyInfo.cs
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.csproj.CoreCompileInputs.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.csproj.AssemblyReference.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.AssemblyInfoInputs.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.AssemblyInfo.cs
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.csproj.CoreCompileInputs.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.DataAccess.deps.json
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.DataAccess.runtimeconfig.json
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.DataAccess.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.DataAccess.pdb
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.Models.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.Models.pdb
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project..D93DF295.Up2Date
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\refint\Project.DataAccess.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.pdb
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.genruntimeconfig.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\ref\Project.DataAccess.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.DataAccess.deps.json
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.DataAccess.runtimeconfig.json
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.DataAccess.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.DataAccess.pdb
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.Models.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\bin\Debug\net8.0\Project.Models.pdb
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project..D93DF295.Up2Date
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\refint\Project.DataAccess.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.pdb
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\Project.DataAccess.genruntimeconfig.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.DataAccess\obj\Debug\net8.0\ref\Project.DataAccess.dll

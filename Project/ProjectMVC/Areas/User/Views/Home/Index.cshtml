@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Product>
+
+<style>
+    body {
+        background-color: #f0f8ff; /* Light blue background */
+        background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239ecbec" fill-opacity="0.15"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+    }
+
+    .main-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 15px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+        transition: all 0.3s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+
+    .page-title {
+        color: #4a4a4a;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<div class="container main-container my-5 p-4">
+    <h1 class="text-center mb-5 display-4 fw-bold page-title">Welcome to Our Pet Paradise</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        @foreach (var product in Model)
+        {
+            var discountPercentage = Math.Round((1 - (product.Price100 / product.ListPrice)) * 100);
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="@product.Image" class="card-img-top" alt="@product.Title" style="height: 200px; object-fit: cover;">
+                        @if (discountPercentage > 0)
+                        {
+                            <span class="position-absolute top-0 end-0 badge bg-danger m-2">
+                                -@discountPercentage%
+                            </span>
+                        }
+                        <span class="position-absolute top-0 start-0 badge bg-info m-2">
+                            @product.Brand
+                        </span>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center text-uppercase fw-bold text-primary">@product.Title</h5>
+                        <div class="mt-auto">
+                            <p class="text-muted text-center mb-1"><s>@product.ListPrice.ToString("c")</s></p>
+                            <p class="text-center fw-bold text-danger fs-5">@product.Price100.ToString("c")</p>
+                        </div>
+                        <a asp-action="Details" asp-route-productId="@product.Id"
+                           class="btn btn-outline-primary mt-2 w-100">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

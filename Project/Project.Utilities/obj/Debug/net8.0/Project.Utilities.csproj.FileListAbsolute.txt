@@ -1,0 +1,36 @@
+F:\PROJECT\Project MVC\Project\Project.Utilities\bin\Debug\net8.0\Project.Utilities.deps.json
+F:\PROJECT\Project MVC\Project\Project.Utilities\bin\Debug\net8.0\Project.Utilities.dll
+F:\PROJECT\Project MVC\Project\Project.Utilities\bin\Debug\net8.0\Project.Utilities.pdb
+F:\PROJECT\Project MVC\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.csproj.AssemblyReference.cache
+F:\PROJECT\Project MVC\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+F:\PROJECT\Project MVC\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.AssemblyInfoInputs.cache
+F:\PROJECT\Project MVC\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.AssemblyInfo.cs
+F:\PROJECT\Project MVC\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.csproj.CoreCompileInputs.cache
+F:\PROJECT\Project MVC\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.dll
+F:\PROJECT\Project MVC\Project\Project.Utilities\obj\Debug\net8.0\refint\Project.Utilities.dll
+F:\PROJECT\Project MVC\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.pdb
+F:\PROJECT\Project MVC\Project\Project.Utilities\obj\Debug\net8.0\ref\Project.Utilities.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\bin\Debug\net8.0\Project.Utilities.deps.json
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\bin\Debug\net8.0\Project.Utilities.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\bin\Debug\net8.0\Project.Utilities.pdb
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.csproj.AssemblyReference.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.AssemblyInfoInputs.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.AssemblyInfo.cs
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.csproj.CoreCompileInputs.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\refint\Project.Utilities.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.pdb
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\ref\Project.Utilities.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\bin\Debug\net8.0\Project.Utilities.deps.json
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\bin\Debug\net8.0\Project.Utilities.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\bin\Debug\net8.0\Project.Utilities.pdb
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.csproj.AssemblyReference.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.AssemblyInfoInputs.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.AssemblyInfo.cs
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.csproj.CoreCompileInputs.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\refint\Project.Utilities.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\Project.Utilities.pdb
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Utilities\obj\Debug\net8.0\ref\Project.Utilities.dll

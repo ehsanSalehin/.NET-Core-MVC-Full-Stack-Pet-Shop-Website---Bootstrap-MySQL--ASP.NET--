@@ -1,0 +1,142 @@
+﻿@model IEnumerable<Project.Models.OrderHeader>
+@using Project.Utilities
+@{
+    var status = Context.Request.Query["status"];
+    var pending = "text-primary";
+    var inprocess = "text-primary";
+    var approved = "text-primary";
+    var completed = "text-primary";
+    var all = "text-primary";
+
+    switch (status)
+    {
+        case "pending":
+            pending = "active text-white bg-primary";
+            break;
+        case "inprocess":
+            inprocess = "active text-white bg-primary";
+            break;
+        case "approved":
+            approved = "active text-white bg-primary";
+            break;
+        case "completed":
+            completed = "active text-white bg-primary";
+            break;
+        case "all":
+            all = "active text-white bg-primary";
+            break;
+        default:
+            all = "active text-white bg-primary";
+            break;
+    }
+}
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2 class="text-primary">Order List</h2>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between pb-5 pt-2">
+        <span></span>
+        <ul class="list-group list-group-horizontal-sm">
+            <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="inprocess">
+            <li class="list-group-item @inprocess">In Process</li>
+            </a>
+            <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="pending">
+            <li class="list-group-item @pending">Payment Pending</li>
+            </a>
+            <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="approved">
+            <li class="list-group-item @approved">Approved</li>
+            </a>
+            <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="completed">
+            <li class="list-group-item @completed">Completed</li>
+            </a>
+            <a style="text-decoration:none;" asp-controller="Order" asp-action="Index" asp-route-status="all">
+            <li class="list-group-item @all">All</li>
+            </a>
+        </ul>
+    </div>
+
+    <table id="orderTable" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Order Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var url = window.location.search;
+            var status = "all";
+
+            if (url.includes("inprocess")) {
+                status = "inprocess";
+            } else if (url.includes("completed")) {
+                status = "completed";
+            } else if (url.includes("pending")) {
+                status = "pending";
+            } else if (url.includes("approved")) {
+                status = "approved";
+            }
+
+            loadDataTable(status);
+        });
+
+        function loadDataTable(status) {
+            $('#orderTable').DataTable({
+                ajax: {
+                    url: '/Admin/Order/GetAll?status=' + status,
+                    dataSrc: 'data',
+                    error: function (xhr, error, thrown) {
+                        console.error('Error fetching data:', error);
+                    }
+                },
+                columns: [
+                    { data: 'id', width: '5%' },
+                    { data: 'name', width: '25%' },
+                    { data: 'phoneNumber', width: '20%' },
+                    {
+                        data: 'applicationUser.email',
+                        width: '20%',
+                        render: function (data) {
+                            return data || 'N/A';
+                        }
+                    },
+                    { data: 'orderStatus', width: '10%' },
+                    {
+                        data: 'orderTotal',
+                        width: '10%',
+                        render: function (data) {
+                            return '$' + parseFloat(data).toFixed(2);
+                        }
+                    },
+                    {
+                        data: 'id',
+                        render: function (data) {
+                            return `
+                                        <div class="w-75 btn-group" role="group">
+                                            <a href="/Admin/Order/Details?orderId=${data}" class="btn btn-primary mx-2">
+                                                <i class="bi bi-pencil-square"></i> Details
+                                            </a>
+                                        </div>
+                                    `;
+                        },
+                        width: '10%'
+                    }
+                ]
+            });
+        }
+    </script>
+}

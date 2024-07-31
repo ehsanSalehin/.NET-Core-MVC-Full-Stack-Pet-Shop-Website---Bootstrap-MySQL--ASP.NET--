@@ -1,0 +1,169 @@
+﻿@model ShoppingCartVM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fancy Shopping Cart</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: calc(80vh - 2cm); /* Adjusted height to account for bottom margin */
+            margin-bottom: 2cm; /* Added bottom margin */
+        }
+
+        .card-header {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+
+        .card-footer {
+            border-radius: 0 0 10px 10px;
+        }
+
+        .btn-outline-primary {
+            border-color: #007bff;
+            color: #007bff;
+        }
+
+            .btn-outline-primary:hover {
+                background-color: #007bff;
+                color: white;
+            }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333;
+                border-color: #bd2130;
+            }
+
+        .table th, .table td {
+            vertical-align: middle;
+        }
+
+        .table img {
+            border-radius: 5px;
+        }
+
+        .list-group-item {
+            border: none;
+            background-color: transparent;
+        }
+
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+        }
+
+            .btn-primary:hover {
+                background-color: #218838;
+            }
+
+        .summary-section {
+            background-color: white;
+            padding-top: 1rem;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <form method="post">
+            <div class="card shadow border-0">
+                <div class="card-header bg-secondary bg-gradient text-light py-4">
+                    <div class="row px-4">
+                        <div class="col-6">
+                            <h5 class="pt-2 text-white">Shopping Cart</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3 pb-3">
+                        <div class="col-md-2 offset-md-1">
+                            <a asp-area="User" asp-controller="Home" asp-action="Index" class="btn btn-outline-primary text-uppercase mb-5 btn-sm">
+                                <small>Continue Shopping</small>
+                            </a>
+                        </div>
+                        <div class="col-md-10 offset-md-1">
+                            @foreach (var item in Model.ShoppingCartList)
+                            {
+                                <div class="row border-bottom pb-3">
+                                    <div class="d-none d-lg-block col-lg-2 text-center py-2">
+                                        <img src="@item.Product.Image" class="rounded img-fluid" alt="Product Image" />
+                                    </div>
+                                    <div class="col-12 col-lg-6 pt-md-3">
+                                        <h5 class="text-uppercase text-secondary"><strong>@item.Product.Title</strong></h5>
+                                        <p><small>@Html.Raw(item.Product.Description)</small></p>
+                                    </div>
+                                    <div class="col-12 col-lg-4 text-center row">
+                                        <div class="col-4 text-md-right pt-2 pt-md-4">
+                                            <h6 class="fw-semibold">
+                                                @item.price.ToString("c")
+                                                <span class="text-muted">&nbsp;x&nbsp;</span>@item.Count
+                                            </h6>
+                                        </div>
+                                        <div class="col-4 pt-2">
+                                            <div class="btn-group" role="group">
+                                                <a asp-action="Plus" asp-route-cartId="@item.Id" class="btn btn-outline-primary bg-gradient py-2">
+                                                    <i class="bi bi-plus-square"></i>
+                                                </a>
+                                                <a asp-action="Minus" asp-route-cartId="@item.Id" class="btn btn-outline-primary bg-gradient py-2">
+                                                    <i class="bi bi-dash-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-right pt-2">
+                                            <a asp-action="Remove" asp-route-cartId="@item.Id" class="btn btn-danger bg-gradient py-2">
+                                                <i class="bi bi-trash-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-0 summary-section">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4">
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <h5 class="text-dark fw-semibold text-uppercase">Total</h5>
+                                    <h4 class="text-dark fw-bolder">@Model.OrderTotal.ToString("c") (CAD)</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 offset-md-5">
+                            <button type="submit" asp-action="Summary" class="btn btn-primary border-0 bg-gradient w-100 py-2">Summary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

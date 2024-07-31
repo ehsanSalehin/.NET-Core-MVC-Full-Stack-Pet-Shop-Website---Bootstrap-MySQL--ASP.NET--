@@ -1,0 +1,104 @@
+﻿@model ShoppingCart
+
+<style>
+    body {
+        background-color: #f0f8ff; /* Light blue background */
+        background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239ecbec" fill-opacity="0.15"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+    }
+
+    .main-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 15px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+    }
+
+    .card {
+        transition: all 0.3s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+
+    .page-title {
+        color: #4a4a4a;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<div class="container main-container mt-5">
+    <div class="card shadow-lg border-0 rounded-3 overflow-hidden">
+        <div class="card-header bg-primary bg-gradient text-white py-4">
+            <h2 class="text-center mb-0 fw-bold text-uppercase">@Model.Product.Title</h2>
+        </div>
+        <div class="card-body p-4">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img class="card-img-top mb-5 mb-md-0 rounded-3 shadow" src="@Model.Product.Image" alt="@Model.Product.Title" style="height: 300px; object-fit: cover;" />
+                </div>
+                <div class="col-md-6">
+                    <div class="small mb-1">
+                        <span class="badge bg-secondary text-white">@Model.Product.Category.Name</span>
+                    </div>
+                    <h3 class="fw-bolder mb-4 text-primary">Price Details</h3>
+                    <div class="fs-5 mb-4">
+                        <span class="text-decoration-line-through text-muted me-2">@Model.Product.ListPrice.ToString("c")</span>
+                        <span class="fw-bold text-danger">@Model.Product.Price.ToString("c")</span>
+                    </div>
+                    <p class="lead">@Html.Raw(Model.Product.Description)</p>
+
+                    <div class="table-responsive mb-4">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Quantity</th>
+                                    <th>1-50</th>
+                                    <th>51-100</th>
+                                    <th>100+</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Price</td>
+                                    <td>@Model.Product.Price.ToString("c")</td>
+                                    <td>@Model.Product.Price50.ToString("c")</td>
+                                    <td>@Model.Product.Price100.ToString("c")</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <form method="post">
+                        <input hidden asp-for="ProductId"/>
+                        <div class="d-flex mb-4">
+                            <input asp-for="Count" class="form-control text-center me-3" id="inputQuantity" type="number" value="1" style="max-width: 4rem" />
+                            <button class="btn btn-primary flex-shrink-0" type="submit" >
+                                <i class="bi bi-cart-plus me-1"></i>
+                                Add to cart 
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 text-center">
+        <a asp-action="Index" class="btn btn-outline-primary">
+            <i class="bi bi-arrow-left me-2"></i>Back to Home
+        </a>
+    </div>
+</div>
+
+<style>
+    .card {
+        transition: all 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+        }
+</style>

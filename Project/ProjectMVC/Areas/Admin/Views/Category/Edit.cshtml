@@ -1,0 +1,93 @@
+﻿@model Category
+
+<div class="content-wrapper">
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+                <div class="card shadow-lg border-0 rounded-lg mb-5">
+                    <div class="card-header bg-gradient-mint-dark">
+                        <h2 class="text-center font-weight-light my-2 text-white">Edit Category</h2>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Edit" method="post">
+                            <input asp-for="Id" type="hidden" />
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="form-floating mb-3">
+                                <input asp-for="Name" class="form-control" id="inputCategoryName" placeholder="Category Name" />
+                                <label for="inputCategoryName">Category Name</label>
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input asp-for="DisplayOrder" class="form-control" id="inputDisplayOrder" placeholder="Display Order" />
+                                <label for="inputDisplayOrder">Display Order</label>
+                                <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+                                <button type="submit" class="btn btn-primary">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    body {
+        background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    }
+
+    .content-wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .bg-gradient-mint-dark {
+        background: linear-gradient(135deg, #38f9d7 0%, #43e97b 100%);
+    }
+
+    .btn-primary {
+        background-color: #38f9d7;
+        border-color: #38f9d7;
+    }
+
+        .btn-primary:hover {
+            background-color: #43e97b;
+            border-color: #43e97b;
+        }
+
+    .form-control:focus {
+        border-color: #38f9d7;
+        box-shadow: 0 0 0 0.2rem rgba(56, 249, 215, 0.25);
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .form-floating > .form-control {
+        padding: 1rem 0.75rem;
+    }
+
+    .form-floating > label {
+        padding: 1rem

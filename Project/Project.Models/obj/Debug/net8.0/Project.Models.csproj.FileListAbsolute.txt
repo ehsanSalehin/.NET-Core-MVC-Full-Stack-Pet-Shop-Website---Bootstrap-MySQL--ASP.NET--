@@ -1,0 +1,29 @@
+F:\PROJECT\Project MVC\Project\Project.Models\obj\Debug\net8.0\Project.Models.csproj.AssemblyReference.cache
+F:\PROJECT\Project MVC\Project\Project.Models\obj\Debug\net8.0\Project.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\PROJECT\Project MVC\Project\Project.Models\obj\Debug\net8.0\Project.Models.AssemblyInfoInputs.cache
+F:\PROJECT\Project MVC\Project\Project.Models\obj\Debug\net8.0\Project.Models.AssemblyInfo.cs
+F:\PROJECT\Project MVC\Project\Project.Models\obj\Debug\net8.0\Project.Models.csproj.CoreCompileInputs.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.csproj.AssemblyReference.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.AssemblyInfoInputs.cache
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.AssemblyInfo.cs
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.csproj.CoreCompileInputs.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.csproj.AssemblyReference.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.AssemblyInfoInputs.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.AssemblyInfo.cs
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.csproj.CoreCompileInputs.cache
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\bin\Debug\net8.0\Project.Models.deps.json
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\bin\Debug\net8.0\Project.Models.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\bin\Debug\net8.0\Project.Models.pdb
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\refint\Project.Models.dll
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.pdb
+E:\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\ref\Project.Models.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\bin\Debug\net8.0\Project.Models.deps.json
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\bin\Debug\net8.0\Project.Models.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\bin\Debug\net8.0\Project.Models.pdb
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\refint\Project.Models.dll
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\Project.Models.pdb
+E:\Projects\Project MVC (Pet shop) - Full Stack\Project\Project.Models\obj\Debug\net8.0\ref\Project.Models.dll
